@@ -8,4 +8,8 @@ public class Square {
         //инициализация нового объекта
         this.l = l;
     }
+
+    public double area() {
+        return this.l * this.l;
+    }
 }
