@@ -7,6 +7,7 @@ public class CalcDistance {
         Point p2 = new Point(0,12);
 
         System.out.println("Расстояние между точками" + " = " + distance(p1,p2));
+        System.out.println("Расстояние между точками" + " = " + p1.distance(p2));
     }
 
     public static double distance(Point p1, Point p2) {
