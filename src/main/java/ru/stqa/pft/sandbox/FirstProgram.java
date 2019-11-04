@@ -3,25 +3,29 @@ package ru.stqa.pft.sandbox;
 public class FirstProgram {
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+       hello("world");
+        hello("user");
 
-        System.out.println(2 + 2);
-        System.out.println(2 * 2);
-        System.out.println(2 / 2);
-        System.out.println(2 - 2);
-        System.out.println(1 / 2);
-        System.out.println(1.0 / 2);
-        System.out.println(1 / 2.0);
-        System.out.println(2.0 / 2);
+        double l = 5;
+        System.out.println("Площадь квадрата со стороной " + l + " = " + area(l));
 
-        System.out.println("2" + "2");
-        System.out.println("2" + 2);
+        double a = 4;
+        double b = 6;
+        System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b + " = " + area(a, b));
+//        int l = 6;
+//        int s = l * l;
+//        System.out.println("Площадь квадрата со стороной " + l + " = " + s);
+    }
 
-        System.out.println(2 + 2 * 2);
-        System.out.println("2 + 2 = " + (2 + 2));
+    public static void hello(String somebody) {
+        System.out.println("Hello " + somebody + "!");
+    }
 
-        int l = 6;
-        int s = l * l;
-        System.out.println("Площадь квадрата со стороной " + l + " = " + s);
+    public static double area(double len) {
+        return len * len;
+    }
+
+    public static double area(double a, double b) {
+        return a * b;
     }
 }
